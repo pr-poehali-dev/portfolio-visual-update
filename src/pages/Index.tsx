@@ -81,23 +81,32 @@ const Index = () => {
         }`}
       >
         <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center min-h-screen">
+          <div className="mb-8 animate-fade-in-up">
+            <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
+              Артём Никифоров
+            </h1>
+            <p className="text-2xl md:text-3xl text-muted-foreground font-medium">
+              Фронтенд-разработчик
+            </p>
+          </div>
           <div className="inline-block mb-12 animate-scale-in">
-            <Badge className="px-18 py-6 text-4xl bg-gradient-to-r from-primary via-secondary to-accent text-white border-0">
+            <Badge className="px-6 py-2 text-sm bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 shadow-lg">
+              <span className="inline-block w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
               Доступен для новых проектов
             </Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift">
-            Создаю сайты для вашего бизнеса
-          </h1>
-          <div className="flex gap-8 justify-center animate-fade-in">
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl animate-fade-in">
+            Создаю современные и адаптивные веб-интерфейсы, которые превращают идеи в реальность
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center animate-fade-in">
             <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer">
-              <Button className="px-12 py-8 text-2xl bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
-                <Icon name="Mail" className="mr-3" size={32} />
+              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform shadow-xl">
+                <Icon name="Mail" className="mr-2" size={20} />
                 Связаться со мной
               </Button>
             </a>
-            <Button variant="outline" className="px-12 py-8 text-2xl hover:scale-105 transition-transform" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
-              <Icon name="FolderKanban" className="mr-3" size={32} />
+            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform border-2" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Icon name="FolderKanban" className="mr-2" size={20} />
               Мои проекты
             </Button>
           </div>
