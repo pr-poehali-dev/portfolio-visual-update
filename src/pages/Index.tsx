@@ -77,7 +77,7 @@ const Index = () => {
       <div
         id="hero"
         data-animate
-        className={`min-h-screen flex items-center justify-center px-4 transition-all duration-1000 ${
+        className={`min-h-screen flex items-center justify-center px-4 transition-all duration-1000 bg-gradient-to-br from-sky-100/40 via-sky-50/30 to-blue-50/20 ${
           isVisible['hero'] ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -87,87 +87,21 @@ const Index = () => {
               Доступен для новых проектов
             </Badge>
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift">
-            Создаю цифровые продукты будущего
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift">
+            Создаю сайты для вашего бизнеса
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in">
-            Full-stack разработчик с 5+ годами опыта в создании современных веб-приложений и мобильных решений
-          </p>
           <div className="flex gap-4 justify-center animate-fade-in">
             <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
               <Icon name="Mail" className="mr-2" size={20} />
               Связаться со мной
             </Button>
-            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform">
-              <Icon name="Download" className="mr-2" size={20} />
-              Скачать резюме
+            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Icon name="FolderKanban" className="mr-2" size={20} />
+              Мои проекты
             </Button>
           </div>
         </div>
       </div>
-
-      <section
-        id="about"
-        data-animate
-        className={`py-24 px-4 transition-all duration-1000 delay-200 ${
-          isVisible['about'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
-      >
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold mb-6 text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            О моём бэкграунде
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
-            Путь от junior разработчика до tech lead
-          </p>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-gradient-to-br from-primary to-secondary rounded-xl">
-                  <Icon name="Briefcase" className="text-white" size={28} />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Опыт работы</h3>
-                  <div className="space-y-4 text-muted-foreground">
-                    <div>
-                      <p className="font-semibold text-foreground">Tech Lead в InnovateTech</p>
-                      <p className="text-sm">2022 - Настоящее время</p>
-                      <p className="mt-1">Руководство командой из 8 разработчиков, архитектура микросервисов</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Senior Developer в StartupHub</p>
-                      <p className="text-sm">2020 - 2022</p>
-                      <p className="mt-1">Разработка SaaS платформы с нуля, 100k+ активных пользователей</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 hover:border-secondary/50">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-gradient-to-br from-secondary to-accent rounded-xl">
-                  <Icon name="GraduationCap" className="text-white" size={28} />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-3">Образование</h3>
-                  <div className="space-y-4 text-muted-foreground">
-                    <div>
-                      <p className="font-semibold text-foreground">Магистр Computer Science</p>
-                      <p className="text-sm">МФТИ, 2018-2020</p>
-                      <p className="mt-1">Специализация: Машинное обучение и распределённые системы</p>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">Сертификации</p>
-                      <p className="mt-1">AWS Solutions Architect, Google Cloud Professional</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       <section
         id="portfolio"
@@ -237,7 +171,7 @@ const Index = () => {
             Технологии и компетенции
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            Мой технологический стек
+            Мои навыки
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skill, index) => (
@@ -287,34 +221,35 @@ const Index = () => {
             <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-primary">
               <Icon name="Mail" className="mx-auto mb-3 text-primary" size={32} />
               <p className="font-semibold">Email</p>
-              <p className="text-sm text-muted-foreground">hello@example.com</p>
+              <p className="text-sm text-muted-foreground">samadhi2411@yandex.ru</p>
             </Card>
-            <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-secondary">
-              <Icon name="Github" className="mx-auto mb-3 text-secondary" size={32} />
-              <p className="font-semibold">GitHub</p>
-              <p className="text-sm text-muted-foreground">@yourprofile</p>
-            </Card>
-            <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-accent">
-              <Icon name="Linkedin" className="mx-auto mb-3 text-accent" size={32} />
-              <p className="font-semibold">LinkedIn</p>
-              <p className="text-sm text-muted-foreground">/in/yourprofile</p>
-            </Card>
-            <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-primary">
-              <Icon name="MessageCircle" className="mx-auto mb-3 text-primary" size={32} />
-              <p className="font-semibold">Telegram</p>
-              <p className="text-sm text-muted-foreground">@yourtelegram</p>
-            </Card>
+            <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer">
+              <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-secondary">
+                <Icon name="Users" className="mx-auto mb-3 text-secondary" size={32} />
+                <p className="font-semibold">ВКонтакте</p>
+                <p className="text-sm text-muted-foreground">vk.com/samadhi2411</p>
+              </Card>
+            </a>
+            <a href="https://t.me/samadhi2411" target="_blank" rel="noopener noreferrer">
+              <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer border-2 hover:border-primary">
+                <Icon name="MessageCircle" className="mx-auto mb-3 text-primary" size={32} />
+                <p className="font-semibold">Telegram</p>
+                <p className="text-sm text-muted-foreground">t.me/samadhi2411</p>
+              </Card>
+            </a>
           </div>
-          <Button size="lg" className="bg-gradient-to-r from-primary via-secondary to-accent text-white hover:scale-110 transition-transform text-lg px-8 py-6">
-            <Icon name="Send" className="mr-2" size={24} />
-            Написать сообщение
-          </Button>
+          <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-gradient-to-r from-primary via-secondary to-accent text-white hover:scale-110 transition-transform text-lg px-8 py-6">
+              <Icon name="Send" className="mr-2" size={24} />
+              Написать сообщение
+            </Button>
+          </a>
         </div>
       </section>
 
       <footer className="py-8 px-4 border-t">
         <div className="max-w-6xl mx-auto text-center text-muted-foreground">
-          <p>© 2024 Portfolio. Создано с 💜 на React + TypeScript</p>
+          <p>© 2024 <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Артём Никифоров</a></p>
         </div>
       </footer>
     </div>
