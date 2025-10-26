@@ -81,22 +81,22 @@ const Index = () => {
           isVisible['hero'] ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-block mb-6 animate-scale-in">
-            <Badge className="px-6 py-2 text-sm bg-gradient-to-r from-primary via-secondary to-accent text-white border-0">
+        <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center min-h-screen">
+          <div className="inline-block mb-12 animate-scale-in">
+            <Badge className="px-18 py-6 text-4xl bg-gradient-to-r from-primary via-secondary to-accent text-white border-0">
               Доступен для новых проектов
             </Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift">
+          <h1 className="text-4xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift">
             Создаю сайты для вашего бизнеса
           </h1>
-          <div className="flex gap-4 justify-center animate-fade-in">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
-              <Icon name="Mail" className="mr-2" size={20} />
+          <div className="flex gap-8 justify-center animate-fade-in">
+            <Button className="px-12 py-8 text-2xl bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
+              <Icon name="Mail" className="mr-3" size={32} />
               Связаться со мной
             </Button>
-            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
-              <Icon name="FolderKanban" className="mr-2" size={20} />
+            <Button variant="outline" className="px-12 py-8 text-2xl hover:scale-105 transition-transform" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Icon name="FolderKanban" className="mr-3" size={32} />
               Мои проекты
             </Button>
           </div>
