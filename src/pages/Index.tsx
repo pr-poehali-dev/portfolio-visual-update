@@ -81,28 +81,28 @@ const Index = () => {
         }`}
       >
         <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center">
-          <div className="mb-6 animate-scale-in">
+          <div className="mb-4 animate-scale-in">
             <img 
               src="https://cdn.poehali.dev/files/56aa96fa-1367-4dbf-95d9-7756ac48553c.jpg" 
               alt="Артём Никифоров"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto mb-6 border-4 border-white shadow-2xl ring-4 ring-primary/20"
+              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-2xl ring-4 ring-primary/20"
             />
           </div>
-          <div className="mb-6 animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
+          <div className="mb-4 animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
               Артём Никифоров
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
+            <p className="text-lg md:text-xl text-muted-foreground font-medium">
               Фронтенд-разработчик
             </p>
           </div>
-          <div className="inline-block mb-6 animate-scale-in">
-            <Badge className="px-6 py-2 text-sm bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 shadow-lg">
+          <div className="inline-block mb-4 animate-scale-in">
+            <Badge className="px-5 py-1.5 text-xs bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 shadow-lg">
               <span className="inline-block w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
               Доступен для новых проектов
             </Badge>
           </div>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in">
+          <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-2xl animate-fade-in">
             Создаю современные и адаптивные веб-интерфейсы, которые превращают идеи в реальность
           </p>
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in">
