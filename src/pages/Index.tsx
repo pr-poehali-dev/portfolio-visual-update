@@ -91,10 +91,12 @@ const Index = () => {
             Создаю сайты для вашего бизнеса
           </h1>
           <div className="flex gap-8 justify-center animate-fade-in">
-            <Button className="px-12 py-8 text-2xl bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
-              <Icon name="Mail" className="mr-3" size={32} />
-              Связаться со мной
-            </Button>
+            <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer">
+              <Button className="px-12 py-8 text-2xl bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform">
+                <Icon name="Mail" className="mr-3" size={32} />
+                Связаться со мной
+              </Button>
+            </a>
             <Button variant="outline" className="px-12 py-8 text-2xl hover:scale-105 transition-transform" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="FolderKanban" className="mr-3" size={32} />
               Мои проекты
