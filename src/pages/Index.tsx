@@ -112,7 +112,7 @@ const Index = () => {
                 Связаться со мной
               </Button>
             </a>
-            <Button size="lg" variant="outline" className="hover:scale-110 hover:border-primary hover:bg-primary/5 transition-all duration-300 border-2" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button size="lg" variant="outline" className="hover:scale-110 hover:border-primary transition-all duration-300 border-2" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="FolderKanban" className="mr-2" size={20} />
               Мои проекты
             </Button>
