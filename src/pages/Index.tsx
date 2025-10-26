@@ -62,13 +62,12 @@ const Index = () => {
   ];
 
   const skills = [
-    { name: 'React', icon: 'Code2', level: 95 },
-    { name: 'TypeScript', icon: 'FileCode', level: 90 },
-    { name: 'Node.js', icon: 'Server', level: 85 },
-    { name: 'Python', icon: 'Terminal', level: 88 },
-    { name: 'PostgreSQL', icon: 'Database', level: 82 },
-    { name: 'Docker', icon: 'Box', level: 80 },
-    { name: 'AWS', icon: 'Cloud', level: 75 },
+    { name: 'HTML', icon: 'Code2', level: 95 },
+    { name: 'CSS', icon: 'Paintbrush', level: 92 },
+    { name: 'SCSS', icon: 'Palette', level: 90 },
+    { name: 'Sass', icon: 'FileCode', level: 88 },
+    { name: 'JavaScript', icon: 'Terminal', level: 93 },
+    { name: 'Bootstrap', icon: 'Layout', level: 87 },
     { name: 'UI/UX Design', icon: 'Palette', level: 85 }
   ];
 
