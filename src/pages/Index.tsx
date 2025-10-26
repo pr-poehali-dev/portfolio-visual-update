@@ -76,33 +76,33 @@ const Index = () => {
       <div
         id="hero"
         data-animate
-        className={`min-h-screen flex items-center justify-center px-4 transition-all duration-1000 bg-gradient-to-br from-sky-100/40 via-sky-50/30 to-blue-50/20 ${
+        className={`min-h-screen flex items-center justify-center px-4 py-20 transition-all duration-1000 bg-gradient-to-br from-sky-100/40 via-sky-50/30 to-blue-50/20 ${
           isVisible['hero'] ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center min-h-screen">
-          <div className="mb-8 animate-scale-in">
+        <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center">
+          <div className="mb-6 animate-scale-in">
             <img 
               src="https://cdn.poehali.dev/files/56aa96fa-1367-4dbf-95d9-7756ac48553c.jpg" 
               alt="Артём Никифоров"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto mb-8 border-4 border-white shadow-2xl ring-4 ring-primary/20"
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto mb-6 border-4 border-white shadow-2xl ring-4 ring-primary/20"
             />
           </div>
-          <div className="mb-8 animate-fade-in-up">
-            <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
+          <div className="mb-6 animate-fade-in-up">
+            <h1 className="text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
               Артём Никифоров
             </h1>
-            <p className="text-2xl md:text-3xl text-muted-foreground font-medium">
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
               Фронтенд-разработчик
             </p>
           </div>
-          <div className="inline-block mb-12 animate-scale-in">
+          <div className="inline-block mb-6 animate-scale-in">
             <Badge className="px-6 py-2 text-sm bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 shadow-lg">
               <span className="inline-block w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
               Доступен для новых проектов
             </Badge>
           </div>
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl animate-fade-in">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl animate-fade-in">
             Создаю современные и адаптивные веб-интерфейсы, которые превращают идеи в реальность
           </p>
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in">
