@@ -32,7 +32,7 @@ const Index = () => {
       title: 'E-commerce Platform',
       description: 'Современный интернет-магазин с интеграцией платежей и управлением товарами',
       tags: ['React', 'Node.js', 'PostgreSQL'],
-      link: 'https://example-ecommerce.com',
+      link: '#',
       image: 'https://cdn.poehali.dev/projects/b2e47576-1064-442a-9602-8386b823d5d7/files/ce6cfa8e-0bbb-4175-8eea-2a46c747e274.jpg'
     },
     {
@@ -40,7 +40,7 @@ const Index = () => {
       title: 'Mobile Banking App',
       description: 'Мобильное приложение для управления финансами с биометрической аутентификацией',
       tags: ['React Native', 'TypeScript', 'Firebase'],
-      link: 'https://example-banking.com',
+      link: '#',
       image: 'https://cdn.poehali.dev/projects/b2e47576-1064-442a-9602-8386b823d5d7/files/49856e72-f32a-4355-b55d-25b5a8f08ec6.jpg'
     },
     {
@@ -48,7 +48,7 @@ const Index = () => {
       title: 'AI Analytics Dashboard',
       description: 'Дашборд для визуализации данных с использованием машинного обучения',
       tags: ['Python', 'TensorFlow', 'D3.js'],
-      link: 'https://example-analytics.com',
+      link: '#',
       image: 'https://cdn.poehali.dev/projects/b2e47576-1064-442a-9602-8386b823d5d7/files/d7f466c0-873a-4e28-8c3f-30ad5736777b.jpg'
     },
     {
@@ -56,7 +56,7 @@ const Index = () => {
       title: 'Social Media Platform',
       description: 'Социальная сеть с real-time чатом и рекомендательной системой',
       tags: ['Vue.js', 'WebSocket', 'MongoDB'],
-      link: 'https://example-social.com',
+      link: '#',
       image: ''
     }
   ];
@@ -149,7 +149,7 @@ const Index = () => {
                       className="absolute inset-0 w-full h-full object-cover"
                     />
                   )}
-                  <div className="absolute inset-0 bg-white/80 group-hover:bg-white/60 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-white/50 group-hover:bg-white/30 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Button size="lg" className="bg-white text-primary hover:bg-white/90">
                       <Icon name="ExternalLink" className="mr-2" size={20} />
