@@ -85,7 +85,7 @@ const Index = () => {
             <img 
               src="https://cdn.poehali.dev/files/56aa96fa-1367-4dbf-95d9-7756ac48553c.jpg" 
               alt="Артём Никифоров"
-              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-2xl ring-4 ring-primary/20"
+              className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover object-top mx-auto mb-4 border-4 border-white shadow-2xl ring-4 ring-primary/20"
             />
           </div>
           <div className="mb-4 animate-fade-in-up">
@@ -107,12 +107,12 @@ const Index = () => {
           </p>
           <div className="flex flex-wrap gap-4 justify-center animate-fade-in">
             <a href="https://vk.com/samadhi2411" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:scale-105 transition-transform shadow-xl">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:scale-110 hover:shadow-2xl transition-all duration-300 shadow-xl">
                 <Icon name="Mail" className="mr-2" size={20} />
                 Связаться со мной
               </Button>
             </a>
-            <Button size="lg" variant="outline" className="hover:scale-105 transition-transform border-2" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button size="lg" variant="outline" className="hover:scale-110 hover:border-primary hover:bg-primary/5 transition-all duration-300 border-2" onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}>
               <Icon name="FolderKanban" className="mr-2" size={20} />
               Мои проекты
             </Button>
