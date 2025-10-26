@@ -81,6 +81,13 @@ const Index = () => {
         }`}
       >
         <div className="max-w-5xl mx-auto text-center flex flex-col items-center justify-center min-h-screen">
+          <div className="mb-8 animate-scale-in">
+            <img 
+              src="https://cdn.poehali.dev/files/56aa96fa-1367-4dbf-95d9-7756ac48553c.jpg" 
+              alt="Артём Никифоров"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto mb-8 border-4 border-white shadow-2xl ring-4 ring-primary/20"
+            />
+          </div>
           <div className="mb-8 animate-fade-in-up">
             <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-shift">
               Артём Никифоров
